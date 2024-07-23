@@ -1,0 +1,2 @@
+*.svg filter=lfs diff=lfs merge=lfs -text
+notebook_outputs/*.ipynb filter=lfs diff=lfs merge=lfs -text
