@@ -39,16 +39,19 @@ All of the code exists within the `DL_goemotions_classification.ipynb` notebook,
 * [Training Functions](DL_goemotions_classification.ipynb#training-functions)
 * [Hyper Parameters](DL_goemotions_classification.ipynb#hyper-parameters)
 * [Models](DL_goemotions_classification.ipynb#models)
-    * [B-LSTM Model](DL_goemotions_classification.ipynb#b-lstm-model)
+    * [LSTM Model](DL_goemotions_classification.ipynb#lstm-model)
     * [xLSTM Model](DL_goemotions_classification.ipynb#xlstm-model)
     * [GRU Model](DL_goemotions_classification.ipynb#gru-model)
+    * [RWKV Model](DL_goemotions_classification.ipynb#rwkv-model)
 * [Optuna](DL_goemotions_classification.ipynb#optuna)
     * [Framework](DL_goemotions_classification.ipynb#framework)
     * [LSTM Study](DL_goemotions_classification.ipynb#lstm-study)
     * [GRU Study](DL_goemotions_classification.ipynb#gru-study)
+    * [RWKV Study](DL_goemotions_classification.ipynb#rwkv-study)
 * [Training](DL_goemotions_classification.ipynb#training)
     * [LSTM Train](DL_goemotions_classification.ipynb#lstm-train)
     * [GRU Train](DL_goemotions_classification.ipynb#gru-train)
+    * [RWKV Train](DL_goemotions_classification.ipynb#rwkv-train)
 * [Comparison](DL_goemotions_classification.ipynb#comparison)
 
 In addition, we include the following folders which contain items tracked by Git LFS:
@@ -72,6 +75,22 @@ conda activate sentiment_analysis
 ## Usage
 
 On local installations using the provided [environment](environment.yml) file, simply execute the notebook (use Jupyter Notebook, JupyterLab, Visual Studio Code or any other IDE that supports ipynb files). Note that on Google Colab you may have to install several packages manually.
+
+## Results
+
+Below are the key results from our emotion classification experiments:
+
+### Training and Validation Losses and Accuracies
+![Training and Validation Losses and Accuracies](images/results_losses_accuracies_plot.png)
+
+This graph illustrates the training and validation losses and accuracies over time for the different models. The curves help us assess the learning progress and generalization capabilities of each model.
+
+### Test Set Confusion Matrices
+![Test Set Confusion Matrices](images/results_test_set_confusion_matrices.png)
+
+The confusion matrices show the performance of our models on the test set, providing insight into which emotions were correctly or incorrectly classified.
+
+For more detailed insights, you can view the final notebook [here](notebook_outputs/DL_goemotions_classification_62.43_61.49_61.16.ipynb).
 
 ## License
 
