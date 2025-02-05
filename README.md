@@ -21,6 +21,7 @@ Technion ECE 046211 - Deep Learning
 ## Introduction
 
 This repository is part of the final project required in the ECE 046211 Deep Learning course in the Technion. Here we implemented and benchmarked multiple RNN models (LSTM, xLSTM and GRU) in the task of emotion classification of the [GoEmotions](https://github.com/google-research/google-research/blob/master/goemotions/) dataset.
+Made by Tal Kogan and Dor Shaul
 
 Emotion classification is a critical task in natural language processing with applications ranging from customer service to mental health analysis. The GoEmotions dataset, created by Google Research, is one of the most comprehensive datasets for this task, covering 27 emotion categories. However, in its current status it imposes a harsh class imbalance. With our limited resources we had to downscale the classes from 27 to 7 primary emotions governed by Paul Ekman's research.
 
